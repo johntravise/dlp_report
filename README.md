@@ -15,6 +15,18 @@ The script requires Python to be installed along with a few additional modules. 
 
 `pip install -r requirements.txt`
 
+## Data Format
+
+The input data file should be in .csv or .xls/.xlsx format and must contain the following columns:
+
+- `Sender Email Address`: The email address of the sender
+- `Matched Rules`: Rules matched for the email (used to identify PCI related emails)
+- `Quarantined State`: The current state of quarantine for the email
+- `Restored From Quarantine State`: Whether the email has been released from quarantine
+- `Subject`: The subject of the email
+- `Found Text`: The text that was found in the email that triggered a rule
+
+
 ## Usage
 ### calcdata.py
 The script takes multiple command-line arguments: the input files (CSV or Excel) and the last argument as the output file (text). If the output file is not specified, it defaults to results.txt.
