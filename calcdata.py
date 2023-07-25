@@ -45,7 +45,7 @@ def analyze_pci(df, output_file):
         for sender in unique_pci_senders:
             sender_data = pci_data[pci_data['Sender Email Address'] == sender]
             for _, row in sender_data.iterrows():
-                f.write(f"Sender: {sender}, Subject: {row['Subject']}\n")
+                f.write(f"Sender: {sender}, Subject: {row['Subject']}, MessageID: {row['Message ID']}\n")
         f.write("********** PCI END **********\n\n\n")
 
 def quarantine_analysis(df, output_file):
