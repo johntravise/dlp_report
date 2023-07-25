@@ -1,5 +1,15 @@
 import argparse
 import pandas as pd
+from docx import Document
+
+
+def text_to_docx(text_file, docx_file):
+    doc = Document()
+    with open(text_file, 'r') as file:
+        for line in file:
+            doc.add_paragraph(line)
+    doc.save(docx_file)
+
 
 def load_data(file_path):
     # Load the Excel file
@@ -78,3 +88,4 @@ if __name__ == "__main__":
     analyze_pci(df, args.output_file)
     quarantine_analysis(df, args.output_file)
     analyze_quarantine_by_brand(df, args.output_file)
+    text_to_docx(args.output_file, 'results.docx')
