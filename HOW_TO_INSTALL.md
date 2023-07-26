@@ -3,12 +3,13 @@ This tool helps you understand your email data. It tells you things like who sen
 
 ## What Your Data Should Look Like
 Your data needs to be in a .csv or .xls/.xlsx (Excel) file. Your export from custom queries must have the following columns:
-• Sender Email Address: This is where the email came from.
-•	Matched Rules: This tells us what rules the email matched (we use this to find emails related to PCI).
-•	Quarantined State: This tells us if the email is currently quarantined.
-•	Restored From Quarantine State: This tells us if the email has been released from quarantine.
-•	Subject: This is the subject of the email.
-•	Message ID: This is the Message ID of the email
+- `Sender Email Address`: This is where the email came from.
+- `Matched Rules`: This tells us what rules the email matched (we use this to find emails related to PCI).
+- `Quarantined State`: This tells us if the email is currently quarantined.
+- `Restored From Quarantine State`: This tells us if the email has been released from quarantine.
+- `Subject`: This is the subject of the email.
+- `Message ID`: This is the Message ID of the email.
+
 
 ## How to Install
 1.	First, you need to install Python on your computer if you haven't already. You can download it from here.
