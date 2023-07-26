@@ -6,7 +6,7 @@ This Python script analyses a given email dataset (in .csv or .xls/.xlsx format)
  - Count of emails quarantined/released by brand (domain)
  - The results are outputted to a text file when using calcdata.py or an Excel file when using datatoexcel.py.
 
-##Requirements
+## Requirements
 The script requires Python to be installed along with a few additional modules. These can be installed with pip using the provided requirements.txt file:
 `pip install -r requirements.txt`
 
