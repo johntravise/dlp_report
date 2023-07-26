@@ -24,8 +24,7 @@ The input data file should be in .csv or .xls/.xlsx format and must contain the 
 - `Quarantined State`: The current state of quarantine for the email
 - `Restored From Quarantine State`: Whether the email has been released from quarantine
 - `Subject`: The subject of the email
-- `Found Text`: The text that was found in the email that triggered a rule
-
+- `Message ID`: The email's Message ID
 
 ## Usage
 ### calcdata.py
